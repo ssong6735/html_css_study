@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em, rem.html</title>
+
+    <style>
+
+        html {
+            font-size: 10px;    
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        body * {
+            border: 2px solid #000;
+        }
+        /* em은 자기자신의 폰트사이즈에 영향을 받는다 */
+        /* 60em => font-size가 10px 이므로 600px */
+        /* rem은 루트의 폰트사이즈에 영향을 받는다 */
+        /* rem 사용시 html에 변경 적용할 폰트 지정, body에 전체 적용 폰트 지정 */
+        .container {
+            width: 60rem;
+            font-size: 10px;         
+        }
+
+        .parent {
+            width: 50%;
+            font-size: 2em;
+        }
+
+        .child {
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+    
+</body>
+</html>

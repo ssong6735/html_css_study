@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child.html</title>
+
+    <style>
+
+        .fruits > li:nth-child(3) {
+            color: orange;
+        }
+        /* 짝수 선택 - 2n, even */
+        .fruits > li:nth-child(even) {
+            color: blue;
+        }
+        /* 홀수 선택 - 2n+1, odd */
+        .fruits > li:nth-child(odd) {
+            color: red;
+        }
+        .fruits > li:nth-child(3n+1) {
+            font-style: italic;
+        }
+        /* .food의 1번째 자식을 찾아서 p인지 확인해서 적용해라 */
+        .food p:nth-child(1) {
+            color: violet;
+        }
+
+        .food p:nth-of-type(1) {
+            background: tomato;
+        }
+
+        .box-group > div:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+        .fruits li:not(.orange) {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>복숭아</li>
+        <li>파인애플</li>
+    </ul>   
+    
+    <hr>
+
+    <div class="food">
+        <div>짜장면</div>
+        <p>볶음밥</p>
+        <p>닭강정</p>
+        <span>짬뽕</span>
+    </div>
+
+    <hr>
+
+    <!-- .box-group>div{$}*3  {}안에 텍스트 들어감, $는 시퀀스(순차적인 수) -->
+    <div class="box-group">
+        <div>1</div>
+        <div>2</div>
+        <div>3
+            <div>3-1</div>
+            <div>3-2</div>
+            <div>3-3</div>
+        </div>
+    </div>
+</body>
+</html>

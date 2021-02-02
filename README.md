@@ -9,3 +9,11 @@
 
 ## 폰트 글꼴 확대 단축키 설정법
 - 파일 -> 기본설정 -> 바로가기 키 -> "글꼴" 검색 -> 단축키 지정 (ex: ctrl + 숫자패드 +, -)
+
+
+## Reset.css 적용법
+[사이트 링크](https://www.jsdelivr.com/package/npm/reset-css)
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+```
