@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <title>연습2.html</title>
+
+    <style>
+        aside {
+            width: 200px;
+            /* background: red; */
+            position: fixed;
+            left: 70px;
+            top: 80px;
+        }
+
+        aside nav ul {
+            width: 150px;
+            margin: 10px 0;
+        }
+
+        aside nav ul li {
+            background: #123456;
+            margin: 2px 0;
+            padding: 5px;
+            font: bold 16px "Arial", sans-serif;
+        }
+
+        aside nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        aside nav ul li a:hover {
+            background: #456789;
+        }
+
+        .content {
+            width: 70%;
+            background: #ccc;
+            height: 1800px;
+            margin-left: 30%;
+        }
+
+        footer {
+            background: #000;
+            padding: 40px 20px;
+        }
+
+        footer address {
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content">
+        본문 내용입니다.
+    </div>
+
+    <footer>
+        <address>Copyright Allright Reserved.</address>
+    </footer>
+
+</body>
+</html>
