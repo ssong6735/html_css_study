@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis.html</title>
+
+    <style>
+        .container {
+            border: 4px solid #000;
+            display: flex;
+        }
+
+        .container .item {
+            /* width: 150px; */
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            box-sizing: border-box;
+
+            /* flex-grow: 1;
+            flex-basis: 0; */
+            flex: 1;
+        }
+
+        .container .item.item3 {
+            /* flex-grow: 2; */
+            flex: 3;
+        }
+
+        /*
+        flex 단축속성 grow, shrink, basis
+        하나만 쓰면 grow
+        두개 쓸때 px 단위가 없으면 grow, shrink
+        두개 쓸때 px 단위가 있으면 grow, basis
+        basis를 생략하면 기본값 0
+         */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">Good job!</div>
+        <div class="item item2">A</div>
+        <div class="item item3">Hello World!</div>
+    </div>
+    
+</body>
+</html>
